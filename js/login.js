@@ -3,7 +3,7 @@ function cargarSubmit(event){
   const usuario=document.getElementById("usuario").value;
   const constrasena= document.getElementById("contrasena").value;
   if (usuario !='' && constrasena !='') {
-    window.open("/workspace-inicial/cover.html", "_self")
+    window.open("/cover.html", "_self")
   }
 }
 function goog(){
