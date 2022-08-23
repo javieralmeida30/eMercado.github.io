@@ -1,23 +1,33 @@
+let productsArray = [];
+function showProductsList(){
+  let htmlContentToAppend = "";
+  productsArray.products.map(item => {
+    htmlContentToAppend += `
+      <div onclick="setCatID(${item.id})" class="list-group-item list-group-item-action cursor-active">
+          <div class="row"> 
+              <div class="col-3"> 
+                  <img src="${item.image}" alt="${item.description}" class="img-thumbnail"> 
+              </div> 
+              <div class="col">
+                  <div class="d-flex w-100 justify-content-between">
+                      <h4 class="mb-1">${item.name}</h4> <h4 class="mb-1">US$${item.cost}</h4>
+                  </div>
+                  <p class="mb-1">${item.description}</p> 
+              </div> 
+              
+          </div> <p class="mb-1"> Vendidos: ${item.soldCount} </p> 
+      </div>
+      `
+  })
+ 
+      document.getElementById("product-list-container").innerHTML = htmlContentToAppend;
+  }
+document.addEventListener("DOMContentLoaded", function(){
+  getJSONData(PRODUCTS_URL).then(function(resultObj){
+      if (resultObj.status === "ok"){
+          productsArray = resultObj.data
+          showProductsList()
+      }
+  });
 
-function userAction(){
-  const response = await fetch('https://japceibal.github.io/emercado-api/cats_products/101.json%27');
-  const myJson = await response.json(); 
-obj = JSON.parse(myJson)
-         obj.catID //101
-    obj.catName //"Autos"
-    productList = obj.products //Lista de productos...
-
-    for (i=0; i<productList.length; i++){
-        id = productList[i].id
-        nombre= productList[i].nombre
-        description= productList[i].description
-        cost= productList[i].cost
-        currency= productList[i].currency
-        soldCount= productList[i].soldCount
-        image = productList[i].image
-        console.log("product" + description)
-        console.log("products" + productList[i])
-        
-}
-}
-
+});
