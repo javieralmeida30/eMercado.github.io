@@ -8,5 +8,5 @@ function cargarSubmit(event){
 }
 function goog(){
  
-  window.open("/workspace-inicial/cover.html", "_self")
+  window.open("https://javieralmeida30.github.io/comjap.github.io/cover", "_self")
 }
