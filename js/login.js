@@ -3,7 +3,7 @@ function cargarSubmit(event){
   const usuario=document.getElementById("usuario").value;
   const constrasena= document.getElementById("contrasena").value;
   if (usuario !='' && constrasena !='') {
-    window.open("/cover.html", "_self")
+    window.open("https://javieralmeida30.github.io/comjap.github.io/cover", "_self")
   }
 }
 function goog(){
