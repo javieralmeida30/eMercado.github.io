@@ -19,18 +19,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-between">
-          <li class="nav-item">
+ <li class="nav-item">
             <a class="nav-link" href="cover.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="categories.html">Categorías</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="sell.html">Vender</a>
+            <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
-          </li>
+            
+            <a class="nav-item" href="my-profile.html"> <button type="button" class="btn btn-secondary"><span id='usuarioPrincipal'></span></button>
+             <script> document.getElementById('usuarioPrincipal').innerHTML = localStorage.usuario; </script> </a>
+            </li>
         </ul>
       </div>
     </div>
