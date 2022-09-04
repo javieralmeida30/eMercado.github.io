@@ -31,14 +31,57 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
-          </li>
+            
+            <a class="nav-item" href="my-profile.html"> <button type="button" class="btn btn-secondary"><span id='usuarioPrincipal'></span></button>
+             <script> document.getElementById('usuarioPrincipal').innerHTML = localStorage.usuario; </script> </a>
+            </li>
         </ul>
       </div>
     </div>
   </nav>
-  <main class="pb-5 container">
-    <div class="row">
-    <div id="product-list-container">
+  <main class="pb-5">
+    <div class="text-center p-4">
+      <h2>Productos</h2>
+      <p class="lead">Verás aquí todas las categorías del sitio.</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col text-end">
+          <div class="btn-group btn-group-toggle mb-4" data-bs-toggle="buttons">
+            <input onclick="sortAndShow1()" type="radio" class="btn-check" name="options" id="sortAsc">
+            <label class="btn btn-light" for="sortAsc">A-Z</label>
+            <input onclick="sortAndShow2()" type="radio" class="btn-check" name="options" id="sortDesc">
+            <label class="btn btn-light" for="sortDesc">Z-A</label>
+            <input type="radio" class="btn-check" name="options" id="sortByCount" checked>
+            <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-6 col-md-12 mb-1 container">
+          <div class="row container p-0 m-0">
+            <div class="col">
+              <p class="font-weight-normal text-end my-2">Cant.</p>
+            </div>
+            <div class="col">
+              <input class="form-control" type="number" placeholder="min." id="rangoMinimo">
+            </div>
+            <div class="col">
+              <input class="form-control" type="number" placeholder="máx." id="rangoMaximo">
+            </div>
+            <div class="col-3 p-0">
+              <div class="btn-group" role="group">
+                <button onclick="ordenarProducts(cantidadMinima, cantidadMaxima)" class="btn btn-light btn-block" id="rangeFilterCount">Filtrar</button>
+                <button onclick="clearFilter(cantidadMinima, cantidadMaxima)" class="btn btn-link btn-sm" id="clearRangeFilter">Limpiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="list-group" id="product-list-container">
+        </div>
+      </div>
     </div>
   </main>
   <footer class="text-muted">
@@ -61,8 +104,7 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/products.js">
-  </script>
+  <script src="js/products.js"></script>
 </body>
 
 </html>
