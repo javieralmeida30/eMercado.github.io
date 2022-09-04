@@ -34,12 +34,23 @@
 	  <form onsubmit="cargarSubmit(event)">
 		<div class="right">
 		
-		<h5>Inicio </h5>
+		<h5>Inicio de sesion</h5>
+		
+		
 		<p>¿No tienes una cuenta? <a href="#">Crea una aquí</a> Te tomará menos de un minuto:) </p>
 		<div class="inputs">
-			<input id="usuario" type="text" placeholder="nombre de usuario/Mail">
-			<br>
-			<input id="contrasena" type="password" placeholder="contraseña">  
+			<div class="form-outline mb-4">
+			<input type="email" id="usuarioPrincipal" class="form-control form-control-lg"
+			  placeholder="Dirección correo electrónico" />
+			
+		  </div>
+	  
+		  <!-- Contraseña input -->
+		  <div class="form-outline mb-3">
+			<input type="password" id="contraseña" class="form-control form-control-lg"
+			  placeholder="Ingresa tu contraseña" />
+
+		  </div>
 			
 		</div>
 			
