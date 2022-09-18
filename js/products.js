@@ -7,7 +7,7 @@ function showProductsList(){
   let htmlContentToAppend = "";
   productsArray.products.map(item => {
     htmlContentToAppend += `
-      <div onclick="setCatID(${item.id})" class="list-group-item list-group-item-action cursor-active">
+      <div onclick="setProductID(${item.id})" class="list-group-item list-group-item-action cursor-active">
           <div class="row"> 
               <div class="col-3"> 
                   <img src="${item.image}" alt="${item.description}" class="img-thumbnail"> 
@@ -148,4 +148,7 @@ document.addEventListener("DOMContentLoaded", function(){
   function sortAndShow2(){
     showProductsList(productsArray.products.sort(sortPorMenorR));
   }
-  
+  function setProductID(id) {
+    localStorage.setItem("productID", id);
+    window.location = "product-info.html"
+}
