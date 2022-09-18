@@ -41,11 +41,42 @@
   </nav>
   <main>
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+     
+      <div class="list-group" id="product-info-container">
       </div>
+      
     </div>
+    <div class="container">
+     
+      <div class="list-group" id="product-comment-container">
+      </div>
+      
+    </div>
+    <form>
+      <h2>Comentarios</h2>
+      <textarea id="comentarioTexto"></textarea>
+      <select id="comentarioScore">
+        <option value="1">
+          1
+        </option>
+        <option value="2">
+          2
+        </option>
+        <option value="3">
+          3
+        </option>
+        <option value="4">
+          4
+        </option>
+        <option value="5">
+          5
+        </option>
+      </select>
+      <br>
+      <button onclick="guardarComentario()" type="button" > Enviar </button>
+    </form>
   </main>
+  
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
@@ -66,7 +97,7 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/products.js"></script> 
+
   <script src="js/product-info.js"></script>
 </body>
 
