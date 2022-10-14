@@ -4,7 +4,7 @@ function cargarSubmit(event){
   const contrasena=document.getElementById("contraseña").value;
   const correo=document.getElementById("usuarioPrincipal").value;
   if (contrasena != "" && correo != "") {
-    window.open("https://javieralmeida30.github.io/comjap.github.io/cover", "_self")
+    window.open("https://javieralmeida30.github.io/eMercado.github.io/cover", "_self")
     localStorage.usuario = correo
   }
   else if (contrasena != "") {
