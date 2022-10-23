@@ -9,6 +9,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" class="css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav w-100 justify-content-between">
+        <ul class="navbar-nav w-100 justify-content-between">
           <ul class="navbar-nav w-100 justify-content-between">
             <li class="nav-item">
               <a class="nav-link" href="cover.html">Inicio</a>
@@ -48,11 +49,85 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+    <br>
+    <center><h2>Carrito de compras</h2></center>
+  <div class="container" style="margin-left:10%;" >
+    <br>
+    <br>
+    <p style="font-size: 20px">Articulos a comprar</p>
+      <div class="row">
+        <div class="col-md-1" style="margin-left: 140px;">
+          <b>Nombre</b>
+        </div>ㅤ
+        <div class="col-md-1">
+         <b>Costo</b>
+        </div>
+        <div class="col-md-1">
+          <b>Cantidad</b>
+        </div>ㅤ
+        <div class="col-md-1">
+          <b>Subtotal</b>
+        </div>
+      
+      </div>
+      <hr width="600px" style="background-color: black; height: 2px; opacity: 1;">
+      <div class="container">
+       <div class="list-group" id="product-venta-container">
+       </div>
+       <div class="col-md-1" id="totalProducto">
+       
+      </div>
       </div>
     </div>
+  </div> 
+
+</div>
+
+<div style="margin-left:11%;">
+  <hr width="600px" style="background-color: black; height: 2px; opacity: 1;">
+
+  
+              <h4>Tipo de envío</h4>
+  <div class="form-check">
+    <input class="form-check-input" type="radio">
+         <label class="form-check-label">
+      Premium 2 a 5 días(15%)
+          </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio">
+    <label class="form-check-label">
+      Express 5 a 8 días(7%)
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio">
+    <label class="form-check-label">
+      Standard 12 a 15 días(5%)
+    </label>
+  </div>
+  <hr width="600px" style="background-color: black; height: 2px; opacity: 1;">
+  <h4 class="p-2">Dirección de envío</h4>
+  <div class="row">
+    <div class="col-md-2">
+      Calle
+      <input type="text" >
+    </div>
+    <div class="col-md-2" >
+      Número
+      <input type="text">
+    </div>
+  </div>
+  <div>
+    <div class="col-md-2">
+      Esquina
+      <input type="text">
+    </div>
+  </div>
+  <hr width="600px" style="background-color: black; height: 2px; opacity: 1;">
+</div>
+
+  </footer>
   </main>
   <footer class="text-muted">
     <div class="container">
