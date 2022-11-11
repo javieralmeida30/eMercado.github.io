@@ -73,13 +73,3 @@ getJSONData(PRODUCTS_URL2).then(function (resultObj) {
 
 
 
-
-/* let Costos = document.getElementById("Costos")
-let Cantidad = document.getElementById("Cantidad")
-
-function sumatoria(){
-   if(Cantidad +=2){
-    return Costos*Cantidad
-   }
-   console.log(Costos)
- } */
