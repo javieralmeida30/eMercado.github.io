@@ -5,25 +5,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>eMercado - Todo lo que busques está aquí</title>
+
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -34,7 +20,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav w-100 justify-content-between">
+        <ul class="navbar-nav w-100 justify-content-between">
           <ul class="navbar-nav w-100 justify-content-between">
             <li class="nav-item">
               <a class="nav-link" href="cover.html">Inicio</a>
@@ -64,10 +50,58 @@
   </nav>
   <main>
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+      <div class="d-flex">
+        <div style="width: 80%;margin-top: 60px;">
+          <h2>Perfil</h2>
+        </div>
+        <div style="width: 100px;height: 100px;">
+          <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" id="imagenPerfil" >
+        </div>
+      </div>
+      <div>
+        <br>
+        <form action="#" novalidate class="needs-validation" id="guardarDatos">
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              Primer nombre <b style="font-weight:1000;">*</b>
+              <input type="text" class="form-control" name="nombre1" required id="nombrePerfil">
+            </div>
+            <div class="col-md-5 mb-3">
+              Segundo nombre
+              <input type="text" class="form-control" name="nombre2"id="segundoNombre">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 mb-3  " >
+              Primer apellido<b style="font-weight:1000;">*</b>
+              <input type="text " class="form-control" name="nombre3" required id="apellidoPerfil">
+            </div>
+            <div class="col-md-5 mb-3">
+              Segundo apellido
+              <input type="text" class="form-control"name="nombre4" id="segundoApellido">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              E-mail<b style="font-weight:1000;">*</b>
+              <input type="text" class="form-control"name="nombre5"  required id="guardarEmail"> 
+            </div>
+            <div class="col-md-5 p-2">
+              Imagen de perfil
+              <input class="form-control" type="file" id="picture">
+            </div>
+            <div class="col-md-5 mb-3">
+              Teléfono de contacto<b style="font-weight:1000;">*</b>
+              <input type="text" class="form-control" name="nombre6" required id="guardarTelefono">
+            </div>
+          </div>
+          <b style="font-weight:1000;">*</b> Estos campos son obligatorios
+          <hr>
+          <button class="btn btn-primary" type="submit" id="guardarCambios">Guardar cambios</button>
+          <button onclick="borrarDatos()" class="btn btn-primary" type="submit" id="borrarCambios">Actualizar</button>
       </div>
     </div>
+    </form>
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -82,6 +116,26 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/my-profile.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 </body>
 
 </html>
