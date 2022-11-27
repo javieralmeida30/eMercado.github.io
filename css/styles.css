@@ -18,7 +18,9 @@ font-size: large;
 nav a {
   text-decoration: none;
 }
-
+ #forminfo {
+margin-left: 4.7%;
+}
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -71,9 +73,6 @@ nav a {
 
 .jumbotron .lead {
   font-size: 38px;
-}
- #forminfo {
-margin-left: 4.7%;
 }
 
 footer {
@@ -196,4 +195,26 @@ a.custom-card:hover {
 
 .checked {
   color: orange;
+}
+
+#imagenPerfil{
+  padding: 10px; margin: 10px; border: 2px solid black; float: left; width: 250px; 
+}
+#segundoNombre{
+  width: auto;
+}
+#nombrePerfil{
+  width: auto;
+}
+#apellidoPerfil{
+  width: auto;
+}
+#segundoApellido{
+  width: auto;
+}
+#guardarTelefono{
+  width: auto;
+}
+#guardarEmail{
+  width: 32ch;
 }
