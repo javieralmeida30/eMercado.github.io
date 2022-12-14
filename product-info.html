@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark  p-1" style="background-color:rgb(67, 148, 224)" >
+    <div class="container" >
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,20 +23,19 @@
         <ul class="navbar-nav w-100 justify-content-between">
           <ul class="navbar-nav w-100 justify-content-between">
             <li class="nav-item">
-              <a class="nav-link" href="cover.html">Inicio</a>
+              <a class="nav-link" href="cover.html"><b>Inicio</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.html">Categorías</a>
+              <a class="nav-link" href="categories.html"><b>Categorías</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sell.html">Vender</a>
+              <a class="nav-link" href="sell.html"><b>Vender</b></a>
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                 
+                <button class="btn btn-secondary dropdown-toggle" style="background-color: rgb(20, 201, 186);"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <span id='usuarioPrincipal'></span> </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu" style="background-color: rgb(20, 201, 186);" aria-labelledby="dropdownMenuButton1">
                   <li><a  class="dropdown-item" href="cart.html">Mi carrito</a></li>
                   <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
                   <li><a class="dropdown-item" href="index.html"> Cerrar sesión</a></li>
@@ -48,54 +47,76 @@
       </div>
     </div>
   </nav>
-  <main>
+  <main style="background-color: rgb(188, 215, 238)">
     <div class="container">
-     
+     <br>
+     <br>
       <div class="list-group" id="product-info-container">
       </div>
       
     </div>
-    <div class="container">
+    <div class="container" >
      
       <div class="list-group" id="product-comment-container">
       </div>
       
     </div>
+    <div>
+      <br> 
     <form id="forminfo" style="margin-left: 122px;">
       <h2>Comentarios</h2>
       <textarea id="comentarioTexto"></textarea>
       <select id="comentarioScore">
         <option value="1">
-          1
+          ✰
         </option>
         <option value="2">
-          2
+          ✰
         </option>
         <option value="3">
-          3
+          ✰
         </option>
         <option value="4">
-          4
+          ✰
         </option>
         <option value="5">
-          5
+          ✰
         </option>
       </select>
       <br>
       <button onclick="guardarComentario()" type="button" > Enviar </button>
     </form>
+  </div>
+  <br><div>
+  <div class="container">
+     <h3>Productos Relacionados</h3>
+    <div class="list-group" id="product-relacionado-container">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+  </div>
   </main>
   
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
-        2022</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+  <footer class="text-muted" style="background-color:rgb(67, 148, 224)">
+
+    <div class="contenedor d-flex justify-content-evenly" >
+            <div> <p class="float-end">
+            <a href="#"><b style="color: white;">Volver arriba</b></a>
+          </p>
+            </div>
+          <div style ><a href="#" target="_blank"> <b style="color: white;">Javier Almeida</b></a></div>
+          <div><a href="https://github.com/javieralmeida30" target="_blank"> <b style="color: white;">GitHub</b> </a></div>
+          <div><a href="#" target="_blank"> <b style="color: white;">LinkedIn</b> </a></div>
+      </div>
     </div>
-  </footer>
+      </footer >
   <div id="spinner-wrapper">
     <div class="lds-ring">
       <div></div>
