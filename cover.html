@@ -12,30 +12,29 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark  p-1" style="background-color:rgb(67, 148, 224)" >
+    <div class="container" >
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav w-100 justify-content-between">
+        <ul class="navbar-nav w-100 justify-content-between">
           <ul class="navbar-nav w-100 justify-content-between">
             <li class="nav-item">
-              <a class="nav-link" href="cover.html">Inicio</a>
+              <a class="nav-link" href="cover.html"><b>Inicio</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.html">Categorías</a>
+              <a class="nav-link" href="categories.html"><b>Categorías</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sell.html">Vender</a>
+              <a class="nav-link" href="sell.html"><b>Vender</b></a>
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                 
+                <button class="btn btn-secondary dropdown-toggle" style="background-color: rgb(20, 201, 186);"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <span id='usuarioPrincipal'></span> </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu" style="background-color: rgb(20, 201, 186);" aria-labelledby="dropdownMenuButton1">
                   <li><a  class="dropdown-item" href="cart.html">Mi carrito</a></li>
                   <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
                   <li><a class="dropdown-item" href="index.html"> Cerrar sesión</a></li>
@@ -49,56 +48,59 @@
   </nav>
   <main>
     <div class="jumbotron text-center"></div>
-    <div class="album py-5 bg-light">
+    <div class="album py-5 bg-light" style="margin-top:40px">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm custom-card cursor-active" id="autos" >
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="autos"  style="background-color: rgb(24, 226, 209);">
               <img class="bd-placeholder-img card-img-top" src="img/cars_index.jpg" 
                 alt="Imgagen representativa de la categoría 'Autos'">
-              <h3 class="m-3">Autos</h3>
+              <h3 class="m-3" style="color: white;">Autos</h3>
               <div class="card-body">
                 <p class="card-text">Los mejores precios en autos 0 kilómetro, de alta y media gama.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm custom-card cursor-active" id="juguetes">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="juguetes"style="background-color: rgb(24, 226, 209);">
               <img class="bd-placeholder-img card-img-top" src="img/toys_index.jpg"
                 alt="Imgagen representativa de la categoría 'Juguetes'">
-              <h3 class="m-3">Juguetes</h3>
+              <h3 class="m-3" style="color: white;">Juguetes</h3>
               <div class="card-body">
                 <p class="card-text">Encuentra aquí los mejores precios para niños/as de cualquier edad.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm custom-card cursor-active" id="muebles">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="muebles"style="background-color: rgb(24, 226, 209);">
               <img class="bd-placeholder-img card-img-top" src="img/furniture_index.jpg"
                 alt="Imgagen representativa de la categoría 'Muebles'">
-              <h3 class="m-3">Muebles</h3>
+              <h3 class="m-3" style="color: white;">Muebles</h3>
               <div class="card-body">
                 <p class="card-text">Muebles antiguos, nuevos y para ser armados por uno mismo.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <a class="btn btn-light btn-lg btn-block" href="categories.html">Y mucho más!</a>
+        <div id="buttonCategories" class="row">
+     <a class="btn btn-secondary btn-lg "  style="background-color:rgb(24, 226, 209); border: 1px;" href="categories.html">Y mucho más!</a>
         </div>
       </div>
     </div>
   </main>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
+  <footer class="text-muted" style="background-color:rgb(67, 148, 224)">
+
+<div class="contenedor d-flex justify-content-evenly" >
+        <div> <p class="float-end">
+        <a href="#"><b style="color: white;">Volver arriba</b></a>
       </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
-        2022</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
-    </div>
-  </footer>
+        </div>
+      <div style ><a href="#" target="_blank"> <b style="color: white;">Javier Almeida</b></a></div>
+      <div><a href="https://github.com/javieralmeida30" target="_blank"> <b style="color: white;">GitHub</b> </a></div>
+      <div><a href="#" target="_blank"> <b style="color: white;">LinkedIn</b> </a></div>
+  </div>
+</div>
+  </footer >
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/init.js"></script>
