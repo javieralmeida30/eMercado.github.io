@@ -8,8 +8,10 @@
 .jumbotron .display-4 {
   font-weight: bold;
 }
+
+
 .nav-item #usuarioPrincipal{
-  color: white;
+  color: rgb(241, 241, 238);
 position: relative;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-weight: bold;
@@ -90,7 +92,7 @@ footer p {
 }
 
 .site-header .dropdown-menu a {
-  color: black;
+  color: rgb(204, 141, 141);
 }
 
 .dropzone {
